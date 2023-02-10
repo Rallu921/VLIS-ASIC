@@ -1,0 +1,16 @@
+genus -f run.tcl
+
+read_hdl picorv32.v
+
+elaborate picorv32
+
+check_design -all
+
+read_sdc /mnt/scratch_b/users/s/saridakm/timing_constr.sdc 
+
+syn_generic
+
+syn_map
+
+syn_opt
+
