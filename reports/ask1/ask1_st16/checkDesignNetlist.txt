@@ -1,0 +1,64 @@
+############################################################################
+# Innovus Netlist Design Rule Check
+# Fri Feb  3 21:13:19 2023
+
+############################################################################
+Design: picorv32
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 10806
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 30770.08
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 10806
+Number of Non-uniquified Insts : 10791
+Number of Nets                 : 11854
+Average number of Pins per Net : 3.62
+Maximum number of Pins in Net  : 101
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 409
+Number of Input Ports          : 102
+Number of Output Ports         : 307
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 2
+Number of Floating Ports                     *: 105
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 304
+**WARN: (IMPREPO-200):	There are 105 Floating Ports in the top design.
+**WARN: (IMPREPO-202):	There are 304 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 1
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+Number of Input/InOut Floating Pins            : 0
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+**WARN: (IMPREPO-216):	There are 1 Instances with input pins tied together.
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 114
+Number of High Fanout nets (>50)               : 32
+**WARN: (IMPREPO-227):	There are 32 High Fanout nets (>50).
+Design check done.
+Report saved in file checkDesign/picorv32.main.htm.ascii.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-227          1  There are %d High Fanout nets (>50).     
+WARNING   IMPREPO-200          1  There are %d Floating Ports in the top d...
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+WARNING   IMPREPO-216          1  There are %d Instances with input pins t...
+*** Message Summary: 4 warning(s), 0 error(s)
+

@@ -1,0 +1,19 @@
+VERSION {1.0}
+PTDEF {instance} {pin} {cell} {edge} {clock_edge} {clock} {phase}
+BANNER
+  {Module} {picorv32}
+  {Timing} {LATE}
+  {Slew Propagation} {WORST}
+  {Operating Condition} {PVT_1P1V_0C}
+  {PVT Mode} {max}
+  {Tree Type} {worst_case}
+  {Process} {1.000}
+  {Voltage} {1.100}
+  {Temperature} {0.000}
+  {time unit} {1.000 ns}
+  {capacitance unit} {1.000 pF}
+  {resistance unit} {1.000 kOhm}
+  {TOOL} {v19.11-s128_1 ((64bit) 08/20/2019 20:54 (Linux 2.6.32-431.11.2.el6.x86_64))}
+  {DATE} {February 10, 2023}
+END_BANNER
+
