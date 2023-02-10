@@ -1,0 +1,97 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 19.11-s128_1 (64bit) 08/20/2019 20:54 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2023-Feb-10 18:50:55 (2023-Feb-10 16:50:55 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: picorv32
+*
+*	Liberty Libraries used: 
+*	        default_emulate_view: /mnt/scratch_b/users/s/saridakm/ex1_st16.dat/libs/mmmc/fast_vdd1v0_basicCells.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:        1.1 
+*
+*       Power View : default_emulate_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile ./timingReports/picorv32_postCTS.power -leakage
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Leakage Power:         0.00185724 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Leakage       Percentage 
+                                Power         (%)        
+-----------------------------------------------------------------------------------------
+Sequential                     0.0005674       30.55 
+Macro                                  0           0 
+IO                                     0           0 
+Combinational                   0.001277       68.73 
+Clock (Combinational)          1.327e-05      0.7147 
+Clock (Sequential)                     0           0 
+-----------------------------------------------------------------------------------------
+Total                           0.001857         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Leakage       Percentage 
+                                Power         (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.1   0.001857         100 
+
+
+Clock                           Leakage       Percentage 
+                                Power         (%)        
+-----------------------------------------------------------------------------------------
+clk                            1.327e-05      0.7147 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)   1.327e-05      0.7147 
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.010000 usec 
+Clock Toggle Rate:   200.0000 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:   FE_OFC2009_pcpi_insn_18 (BUFX20):        1.034e-06 
+*                Highest Leakage Power:   FE_OFC2009_pcpi_insn_18 (BUFX20):        1.034e-06 
+*          Total Cap:      1.48695e-10 F
+*          Total instances in design: 10872
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+
+Total leakage power = 0.00185724 mW
+Cell usage statistics:  
+Library fast_vdd1v0 , 10872 cells ( 100.000000%) , 0.00185724 mW ( 100.000000%  ) 
