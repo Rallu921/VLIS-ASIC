@@ -1,0 +1,9 @@
+getPlaceMode
+place_opt_design
+
+
+report_power > power.txt
+report_area > area.txt
+reportNetStat > NetStat.txt
+report_route -summary > route.txt
+

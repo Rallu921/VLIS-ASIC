@@ -1,0 +1,17 @@
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+globalNetConnect VDD -type tiehi -instanceBasename *
+globalNetConnect VSS -type tielo -instanceBasename *
+createPGPin VDD -net VDD -geom Metal10 27 0 30 12
+createPGPin VSS -net VSS -geom Metal10 33 0 36 6
+
+
+editPowerVia -top_layer Metal11 -area {27 9 30 12} -add_vias 1 -bottom_layer Metal10
+editPowerVia -top_layer Metal11 -area {33 3 36 6} -add_vias 1 -bottom_layer Metal10
+
+
+place_opt_design
+
+report_power > power.txt
+report_timing > timing.txt
+report_area > area.txt

@@ -1,0 +1,26 @@
+create_route_type -top_preferred_layer Metal9 -bottom_preferred_layer Metal7 -non_default_rule <NDR_name> -name <route_name> -shield_net <net_name> -preferred_routing_layer_effort <high|medium|low> 
+
+
+set_ccopt_property -net_type leaves route_type route_ex1 
+set_ccopt_property -net_type leaves target_max_trans 150ps 
+set_ccopt_property target_skew 100ps
+
+
+
+create_route_type -top_preferred_layer Metal9 -bottom_preferred_layer Metal7 -non_default_rule DNR_ex1 -name route_ex1
+set_ccopt_property -net_type trunk route_type route_ex1 
+set_ccopt_property -net_type trunk target_max_trans 150ps 
+set_ccopt_property target_skew 100ps
+
+
+
+
+create_ccopt_clock_tree_spec -file clock_tree_ex1.spec
+
+ccopt_design
+
+optDesign -postCTS
+
+report_ccopt_clock_trees > clock_trees_rep_ex1_st14.txt
+
+report_ccopt_skew_groups > skew_groups_rep_ex1_st14.txt
